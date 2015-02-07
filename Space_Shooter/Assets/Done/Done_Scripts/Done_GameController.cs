@@ -82,8 +82,7 @@ public class Done_GameController : MonoBehaviour
 			}*/
 		}
 	}
-
-	//elliott's destroy everything code
+	
 	public void AddScore (int newScoreValue)
 	{
 		score += newScoreValue;
@@ -109,7 +108,8 @@ public class Done_GameController : MonoBehaviour
 	*/
 	public void GameOver ()
 	{
-		gameOverText.text = "Game Over! \n" +
+	// Elliott: Fix game over text
+		gameOverText.text = "Game Over \n" +
 			"Score: " + score;
 		gameOver = true;
 
