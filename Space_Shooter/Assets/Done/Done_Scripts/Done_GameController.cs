@@ -17,7 +17,7 @@ public class Done_GameController : MonoBehaviour
 	
 	private bool gameOver;
 	private bool restart;
-	private int score;
+	public static int score;
 	
 	void Start ()
 	{
