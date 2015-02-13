@@ -14,6 +14,7 @@ public class Done_GameController : MonoBehaviour
 	public GUIText scoreText;
 	public GUIText restartText;
 	public GUIText gameOverText;
+	//public GUIText titleText;
 	
 	private bool gameOver;
 	private bool restart;
@@ -25,6 +26,7 @@ public class Done_GameController : MonoBehaviour
 		restart = false;
 		restartText.text = "";
 		gameOverText.text = "";
+		//titleText.text = "Sky Fire";
 		score = 0;
 		UpdateScore ();
 		StartCoroutine (SpawnWaves ());
@@ -91,6 +93,8 @@ public class Done_GameController : MonoBehaviour
 	
 	void UpdateScore ()
 	{
+		
+		//titleText.text = "Sky Fire";
 		scoreText.text = "Score: " + score;
 	}
 
@@ -108,9 +112,10 @@ public class Done_GameController : MonoBehaviour
 	*/
 	public void GameOver ()
 	{
+		
+		//titleText.text = "Sky Fire";
 	// Elliott: Fix game over text
-		gameOverText.text = "Game Over \n" +
-			"Score: " + score;
+		gameOverText.text = "Game Over \n\n High Score: " + score+"\n Score: " +score;
 		gameOver = true;
 
 		//restart test
