@@ -26,7 +26,7 @@ public class Done_GameController : MonoBehaviour
 		restart = false;
 		restartText.text = "";
 		gameOverText.text = "";
-		titleText.text = "";
+		titleText.text = "Sky Fire";
 		score = 0;
 		UpdateScore ();
 		StartCoroutine (SpawnWaves ());
@@ -93,8 +93,7 @@ public class Done_GameController : MonoBehaviour
 	
 	void UpdateScore ()
 	{
-		
-		titleText.text = "Sky Fire";
+
 		scoreText.text = "Score: " + score;
 	}
 
